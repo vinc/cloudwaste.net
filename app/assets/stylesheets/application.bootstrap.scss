@@ -1,2 +1,31 @@
-@import 'bootstrap/scss/bootstrap';
-@import 'bootstrap-icons/font/bootstrap-icons';
+$primary: #93C;
+$color-mode-type: media-query;
+$link-color-dark: $primary;
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons";
+
+.container-narrow {
+  max-width: 45rem;
+}
+
+.text-primary-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(45deg, #93C, #C3A);
+}
+
+ul.columns {
+  column-count: 1;
+
+  @include media-breakpoint-up(sm) {
+    column-count: 2;
+  }
+
+  @include media-breakpoint-up(lg) {
+    column-count: 3;
+  }
+}
