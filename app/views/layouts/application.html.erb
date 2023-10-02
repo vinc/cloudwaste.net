@@ -11,6 +11,24 @@
   </head>
 
   <body>
+    <% if notice %>
+      <div class="container">
+        <div class="alert alert-success alert-dismissible fade show mt-4 mb-2" role="alert">
+          <strong>Success!</strong> <%= notice %>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+    <% end %>
+
+    <% if alert %>
+      <div class="container">
+        <div class="alert alert-warning alert-dismissible fade show mt-4 mb-2" role="alert">
+          <strong>Warning!</strong> <%= alert %>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
