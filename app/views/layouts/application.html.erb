@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100">
   <head>
     <%= display_meta_tags site: "CloudWaste", separator: "-" %>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,7 +10,7 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body>
+  <body class="h-100">
     <% if notice %>
       <div class="container">
         <div class="alert alert-success alert-dismissible fade show mt-4 mb-2" role="alert">
